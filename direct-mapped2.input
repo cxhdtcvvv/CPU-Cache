@@ -1,0 +1,35 @@
+# Address Bits = 8
+# Bytes/Word = 2
+# Words/Block = 2
+# Blocks/Set = 2
+# Sets/Cache = 2
+# Cycles/Hit 1
+# Cycles/Read_Block = 2
+# Cycles/Write_Block = 3
+write-req 0 FFAB
+read-req 0
+write-req 8 21EE
+read-req 8
+read-req 10
+write-req 14 3433
+write-req 20 2534
+write-req 24 EF21
+write-req 20 2834
+write-req 18 BBB3
+write-req 32 AB32
+write-req 40 3232
+read-req 8
+flush-req
+write-req 16 0202
+write-req 18 0203
+write-req 20 2000
+write-req 24 0005
+read-req 40
+read-req 32
+read-req 40 
+write-req 54 0001
+read-req 0
+write-req 24 0005
+read-req 16
+
+

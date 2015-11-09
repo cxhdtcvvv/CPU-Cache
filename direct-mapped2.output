@@ -1,0 +1,33 @@
+# Address Bits = 8
+# Bytes/Word = 2
+# Words/Block = 2
+# Blocks/Set = 2
+# Sets/Cache = 2
+# Cycles/Hit 1
+# Cycles/Read_Block = 2
+# Cycles/Write_Block = 3
+write-ack 0 miss 3
+read-ack FFAB 0 hit 1
+write-ack 0 miss 3
+read-ack 21EE 0 hit 1
+read-ack 0000 0 hit 1
+write-ack 1 miss 3x
+write-ack 1 miss 3
+write-ack 0 miss 6
+write-ack 1 hit 1
+write-ack 0 miss 6
+write-ack 0 miss 6
+write-ack 0 miss 6
+read-ack 21EE 0 miss 6
+flush-ack 9
+write-ack 0 miss 3
+write-ack 0 hit 1
+write-ack 1 hit 1
+write-ack 0 miss 3
+read-ack 3232 0 miss 6
+read-ack AB32 0 miss 6
+read-ack 3232 0 hit 1
+write-ack 1 miss 3
+read-ack FFAB 0 miss 3
+write-ack 0 miss 3
+read-ack 0202 0 miss 3
